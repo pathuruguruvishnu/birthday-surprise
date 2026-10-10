@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-magical-pink: #ff9a9e;
+  --color-magical-peach: #fecfef;
+  --color-magical-lavender: #a18cd1;
+  --color-magical-cream: #fbc2eb;
+  --color-magical-purple: #c2e9fb;
+  
+  --font-sans: 'Outfit', sans-serif;
+  --font-handwriting: 'Caveat', cursive;
+  --font-display: 'Playfair Display', serif;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 8s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-magical-peach via-magical-pink to-magical-lavender text-slate-800 antialiased min-h-screen overflow-x-hidden;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/30 backdrop-blur-md border border-white/40 shadow-xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500;
+}
