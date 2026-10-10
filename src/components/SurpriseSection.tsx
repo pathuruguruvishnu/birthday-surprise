@@ -254,9 +254,9 @@ export default function SurpriseSection({ onNext, onReset }: SurpriseSectionProp
               <Sparkles size={14} className="animate-spin" />
             </motion.div>
 
-            {/* 3D MASSIVE CELEBRATION HEADING */}
+            {/* 3D Heading — single line (decreased by 4 pts) */}
             <h1
-              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-black tracking-wider leading-tight text-center my-3"
+              className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-black tracking-normal sm:tracking-wide leading-tight text-center my-3 whitespace-nowrap"
               style={{
                 background: 'linear-gradient(135deg, #fff7b2 0%, #ffd700 25%, #ff6b8b 50%, #f43f5e 75%, #c084fc 100%)',
                 WebkitBackgroundClip: 'text',
@@ -270,7 +270,7 @@ export default function SurpriseSection({ onNext, onReset }: SurpriseSectionProp
             </h1>
 
             {/* ==================================================== */}
-            {/* 3D SIGNATURE CARD: BY HER CHELLI SRAVANI              */}
+            {/* 3D SIGNATURE CARD: BY YOUR LOVING CHELLI SRAVANI       */}
             {/* ==================================================== */}
             <motion.div
               initial={{ scale: 0.88, opacity: 0, y: 25 }}
@@ -288,7 +288,7 @@ export default function SurpriseSection({ onNext, onReset }: SurpriseSectionProp
                   textShadow: '0 4px 15px rgba(0,0,0,0.85), 0 0 30px rgba(244,63,94,0.9)',
                 }}
               >
-                By Her Loving Chelli,{' '}
+                By Your Loving Chelli,{' '}
                 <span className="text-amber-300 underline decoration-pink-400 decoration-wavy underline-offset-8">
                   Sravani
                 </span>{' '}

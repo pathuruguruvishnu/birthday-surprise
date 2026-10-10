@@ -83,9 +83,9 @@ export default function FinalSection({ onReset }: { onReset: () => void }) {
           <span>✨</span>
         </motion.div>
 
-        {/* 3D Giant Heading */}
+        {/* 3D Heading — single line (decreased by 4 pts) */}
         <motion.h1 
-          className="text-4xl sm:text-6xl md:text-7xl font-serif font-black tracking-wider leading-tight text-center my-3"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-black tracking-normal sm:tracking-wide leading-tight text-center my-3 whitespace-nowrap"
           style={{
             background: 'linear-gradient(135deg, #fff7b2 0%, #ffd700 25%, #ff6b8b 50%, #f43f5e 75%, #c084fc 100%)',
             WebkitBackgroundClip: 'text',
@@ -100,7 +100,7 @@ export default function FinalSection({ onReset }: { onReset: () => void }) {
           HAPPY BIRTHDAY, AKKA!
         </motion.h1>
         
-        {/* 3D Signature Card: By Her Chelli Sravani */}
+        {/* 3D Signature Card: By Your Loving Chelli Sravani */}
         <motion.div
           initial={{ scale: 0.88, opacity: 0, y: 25 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ export default function FinalSection({ onReset }: { onReset: () => void }) {
               textShadow: '0 4px 15px rgba(0,0,0,0.85), 0 0 30px rgba(244,63,94,0.9)',
             }}
           >
-            By Her Loving Chelli,{' '}
+            By Your Loving Chelli,{' '}
             <span className="text-amber-300 underline decoration-pink-400 decoration-wavy underline-offset-8">
               Sravani
             </span>{' '}
